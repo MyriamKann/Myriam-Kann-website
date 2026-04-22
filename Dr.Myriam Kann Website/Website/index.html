@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#f2ede4" />
+  <title>Dr. Myriam Kann — Psychiatre · Psychothérapeute · Dudelange</title>
+  <meta name="description" content="Cabinet de Dr. Myriam Kann, Psychiatre et Psychothérapeute à Dudelange, Luxembourg. Français, Deutsch, English. Paiement direct immédiat. Prenez rendez-vous via Doctena." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans:  ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+            serif: ['"Cormorant Garamond"', 'ui-serif', 'Georgia', 'serif'],
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+    body { background-color: #f2ede4; font-family: 'Inter', ui-sans-serif, system-ui, sans-serif; padding-left: env(safe-area-inset-left); padding-right: env(safe-area-inset-right); }
+    .font-serif { font-family: 'Cormorant Garamond', ui-serif, Georgia, serif; }
+    img, iframe { max-width: 100%; }
+    a, button { -webkit-tap-highlight-color: rgba(15,118,110,0.12); touch-action: manipulation; }
+    ::selection { background-color: #0f766e; color: #f2ede4; }
+    @media (min-width: 768px) {
+      ::-webkit-scrollbar { width: 10px; height: 10px; }
+      ::-webkit-scrollbar-track { background: #f2ede4; }
+      ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 9999px; border: 2px solid #f2ede4; }
+      ::-webkit-scrollbar-thumb:hover { background: #0f766e; }
+    }
+    a:focus-visible, button:focus-visible { outline: 2px solid #0f766e; outline-offset: 3px; border-radius: 6px; }
+    @media (min-width: 768px) and (prefers-reduced-motion: no-preference) {
+      @keyframes blobDrift { 0%,100% { transform: translate(0,0) scale(1); } 50% { transform: translate(20px,-15px) scale(1.05); } }
+      .pointer-events-none.fixed > div { animation: blobDrift 18s ease-in-out infinite; will-change: transform; }
+      .pointer-events-none.fixed > div:nth-child(2) { animation-duration: 24s; animation-delay: -6s; }
+      .pointer-events-none.fixed > div:nth-child(3) { animation-duration: 30s; animation-delay: -12s; }
+    }
+    @media (prefers-reduced-motion: reduce) { *,*::before,*::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; } }
+    h1.font-serif, h2.font-serif, .font-serif { letter-spacing: -0.005em; }
+    h1.font-serif { letter-spacing: -0.02em; }
+    .font-serif.italic, .italic.font-serif { letter-spacing: 0; }
+    [lang="de"] h1, [lang="de"] h2, [lang="de"] p { hyphens: auto; -webkit-hyphens: auto; }
+    @media (max-width: 380px) { h1 { word-break: break-word; } }
+    iframe { background-color: #e7e2d7; display: block; }
+    .rounded-2xl.border:hover { box-shadow: 0 4px 6px -1px rgba(15,118,110,0.06), 0 10px 20px -5px rgba(15,118,110,0.08); }
+    #langMenu:not(.hidden) { animation: dropdownIn 160ms ease-out; transform-origin: top right; }
+    @keyframes dropdownIn { from { opacity: 0; transform: scale(0.96) translateY(-4px); } to { opacity: 1; transform: scale(1) translateY(0); } }
+    .lang-option { cursor: pointer; }
+    @media (min-width: 380px) and (max-width: 640px) { section h1.font-serif { font-size: clamp(2.75rem, 11vw, 3.75rem); } }
+    header.sticky { padding-top: env(safe-area-inset-top); }
+    footer { padding-bottom: env(safe-area-inset-bottom); }
+    header a.group:hover .italic.text-teal-800 { color: #134e4a; transition: color 300ms ease; }
+  </style>
+</head>
+
+<body class="font-sans text-slate-800 antialiased relative overflow-x-hidden">
+
+  <div aria-hidden="true" class="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
+    <div class="absolute -top-32 -left-32 h-[20rem] w-[20rem] sm:h-[28rem] sm:w-[28rem] rounded-full bg-teal-200/40 blur-3xl"></div>
+    <div class="absolute top-1/3 -right-32 sm:-right-40 h-[22rem] w-[22rem] sm:h-[32rem] sm:w-[32rem] rounded-full bg-amber-200/40 blur-3xl"></div>
+    <div class="absolute bottom-0 left-1/3 h-[18rem] w-[18rem] sm:h-[24rem] sm:w-[24rem] rounded-full bg-teal-100/50 blur-3xl"></div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-[#f2ede4]/80 border-b border-stone-300/60">
+    <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-10 py-3 sm:py-4 flex items-center justify-between gap-3">
+      <a href="#" class="flex flex-col leading-tight min-w-0 group">
+        <span class="font-serif text-xl sm:text-2xl lg:text-[1.6rem] text-slate-900 tracking-tight truncate">
+          Dr. Myriam <span class="italic text-teal-800">Kann</span>
+        </span>
+        <span class="text-[0.6rem] sm:text-[0.65rem] uppercase tracking-[0.28em] text-teal-700/70 mt-0.5" data-i18n="header.label">Cabinet Médical</span>
+      </a>
+
+      <div class="flex items-center gap-2 sm:gap-3 shrink-0">
+        <div class="relative">
+          <button id="langToggle" type="button" aria-haspopup="true" aria-expanded="false"
+                  class="inline-flex items-center gap-1.5 rounded-full border border-stone-300 bg-white/70 hover:bg-white hover:border-teal-300 transition-colors px-3 py-2 text-xs sm:text-sm font-medium text-slate-700">
+            <span id="langCurrent">FR</span>
+            <span class="text-slate-400 text-xs">▾</span>
+          </button>
+          <ul id="langMenu" role="menu"
+              class="hidden absolute right-0 mt-2 w-36 rounded-xl border border-stone-300 bg-white/95 backdrop-blur shadow-lg overflow-hidden py-1 z-50">
+            <li role="none">
+              <button role="menuitem" data-lang="fr" class="lang-option w-full text-left px-4 py-2.5 text-sm hover:bg-teal-50 text-slate-700 flex items-center justify-between">
+                Français <span class="lang-check text-teal-700 font-bold hidden">✓</span>
+              </button>
+            </li>
+            <li role="none">
+              <button role="menuitem" data-lang="de" class="lang-option w-full text-left px-4 py-2.5 text-sm hover:bg-teal-50 text-slate-700 flex items-center justify-between">
+                Deutsch <span class="lang-check text-teal-700 font-bold hidden">✓</span>
+              </button>
+            </li>
+            <li role="none">
+              <button role="menuitem" data-lang="en" class="lang-option w-full text-left px-4 py-2.5 text-sm hover:bg-teal-50 text-slate-700 flex items-center justify-between">
+                English <span class="lang-check text-teal-700 font-bold hidden">✓</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+        <a href="https://www.doctena.lu/en/specialty/psychotherapist/dr-myriam-kann-2078203"
+           target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center rounded-full bg-teal-700 hover:bg-teal-800 transition-colors text-white text-xs sm:text-sm font-medium px-3 sm:px-4 py-2 shadow-sm">
+          <span data-i18n="header.cta">Prendre RDV</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-10 pt-10 sm:pt-16 lg:pt-24 pb-16 sm:pb-20 lg:pb-28">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 sm:gap-12 lg:gap-16 items-center">
+      <div class="lg:col-span-7 order-2 lg:order-1">
+        <div class="flex items-center gap-3 mb-5 sm:mb-8">
+          <span class="h-px w-8 sm:w-10 bg-teal-700/70"></span>
+          <span class="text-[0.65rem] sm:text-[0.7rem] uppercase tracking-[0.24em] sm:tracking-[0.28em] text-teal-800 font-medium" data-i18n="hero.eyebrow">Psychiatre · Psychothérapeute</span>
+        </div>
+        <h1 class="font-serif font-light text-[2.75rem] leading-[1.05] sm:text-6xl lg:text-7xl lg:leading-[1.02] text-slate-900">
+          <span data-i18n="hero.firstname">Dr. Myriam</span><br />
+          <span class="italic text-teal-800">Kann</span>
+        </h1>
+        <p class="mt-6 sm:mt-8 text-base sm:text-lg text-slate-600 max-w-xl leading-relaxed" data-i18n="hero.subtitle">
+          Un accompagnement psychiatrique et psychothérapeutique attentif, dans un cadre discret et bienveillant à Dudelange. Consultations en français, allemand et anglais.
+        </p>
+        <div class="mt-8 sm:mt-10 flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-5">
+          <a href="https://www.doctena.lu/en/specialty/psychotherapist/dr-myriam-kann-2078203"
+             target="_blank" rel="noopener noreferrer"
+             class="inline-flex items-center justify-center sm:justify-start rounded-full bg-teal-700 hover:bg-teal-800 transition-all duration-300 text-white px-6 sm:px-7 py-3.5 sm:py-4 shadow-md hover:shadow-lg hover:-translate-y-0.5">
+            <span class="font-medium text-sm sm:text-base" data-i18n="hero.cta">Prendre rendez-vous sur Doctena</span>
+          </a>
+        </div>
+      </div>
+      <div class="lg:col-span-5 flex justify-center lg:justify-end order-1 lg:order-2">
+        <div class="relative w-[78%] max-w-[18rem] sm:max-w-sm">
+          <div class="aspect-[3/4] rounded-2xl sm:rounded-3xl overflow-hidden bg-gradient-to-br from-teal-100/60 via-stone-100 to-amber-100/50 border border-stone-200/80 shadow-xl flex items-end">
+            <div class="w-full bg-gradient-to-t from-slate-900/60 to-transparent px-5 sm:px-6 py-5 sm:py-6">
+              <p class="font-serif italic text-white/90 text-base sm:text-lg leading-snug" data-i18n="hero.image_quote">Écouter, comprendre, accompagner.</p>
+            </div>
+          </div>
+          <div class="absolute -bottom-4 -right-4 sm:-bottom-5 sm:-right-5 h-16 w-16 sm:h-20 sm:w-20 rounded-full bg-teal-700 border-4 border-[#f2ede4] flex items-center justify-center shadow-lg">
+            <div class="text-center text-white">
+              <p class="text-[0.5rem] sm:text-[0.55rem] uppercase tracking-widest leading-none">CNP</p>
+              <p class="font-serif text-[1.1rem] sm:text-xl leading-none mt-0.5">LU</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-10 py-16 sm:py-20 lg:py-28">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 sm:gap-12 lg:gap-20 items-center">
+      <div class="lg:col-span-5 flex justify-center">
+        <div class="relative w-full max-w-xs sm:max-w-sm">
+          <div class="aspect-square rounded-3xl bg-gradient-to-br from-teal-50 via-stone-100 to-amber-50 border border-stone-200 flex items-center justify-center shadow-inner">
+            <div class="text-center px-6">
+              <p class="font-serif italic text-4xl sm:text-5xl text-teal-700/40 leading-none mb-4">"</p>
+              <p class="font-serif text-lg sm:text-xl text-slate-700 leading-relaxed" data-i18n="hero.image_quote">Écouter, comprendre, accompagner.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lg:col-span-7 space-y-5 sm:space-y-6">
+        <div>
+          <p class="text-[0.65rem] sm:text-[0.7rem] uppercase tracking-[0.24em] sm:tracking-[0.28em] text-teal-700 font-medium mb-3 sm:mb-4" data-i18n="about.eyebrow">La Praticienne</p>
+          <h2 class="font-serif font-light text-3xl sm:text-4xl lg:text-5xl text-slate-900 leading-tight">
+            <span data-i18n="about.title_1">À propos du</span> <span class="italic text-teal-800" data-i18n="about.title_2">Dr. Kann</span>
+          </h2>
+        </div>
+        <div class="space-y-4 text-base sm:text-lg text-slate-600 leading-relaxed">
+          <p data-i18n="about.p1">Le Dr. Myriam Kann est psychiatre et psychothérapeute, exerçant en cabinet privé à Dudelange, au Luxembourg. Son approche s'inscrit dans une écoute patiente et un respect profond du parcours de chacun.</p>
+          <p data-i18n="about.p2">Les consultations se déroulent dans un cadre discret et chaleureux, en français, allemand ou anglais, afin que chaque personne puisse s'exprimer dans la langue qui lui est la plus naturelle.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INFO GRID -->
+  <section class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-10 py-16 sm:py-20 lg:py-28">
+    <div class="text-center mb-10 sm:mb-14">
+      <p class="text-[0.65rem] sm:text-[0.7rem] uppercase tracking-[0.24em] sm:tracking-[0.28em] text-teal-700 font-medium mb-3 sm:mb-4" data-i18n="info.eyebrow">Le Cabinet</p>
+      <h2 class="font-serif font-light text-3xl sm:text-4xl lg:text-5xl text-slate-900 leading-tight">
+        <span data-i18n="info.title_1">Informations</span> <span class="italic text-teal-800" data-i18n="info.title_2">pratiques</span>
+      </h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
+
+      <div class="relative rounded-2xl border border-stone-300 bg-white/70 backdrop-blur p-6 sm:p-8 transition-all duration-300 hover:-translate-y-0.5 hover:border-teal-300 hover:shadow-lg">
+        <div class="h-11 w-11 sm:h-12 sm:w-12 rounded-full bg-teal-50 border border-teal-200 flex items-center justify-center mb-4 sm:mb-6">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-teal-700" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/></svg>
+        </div>
+        <p class="text-[0.65rem] sm:text-[0.7rem] uppercase tracking-[0.22em] text-slate-500 mb-2 sm:mb-3" data-i18n="info.card1_label">Langues parlées</p>
+        <p class="font-serif font-light text-xl sm:text-2xl text-slate-900 leading-tight" data-i18n="info.card1_value">Français · Deutsch · English</p>
+      </div>
+
+      <div class="relative rounded-2xl border border-stone-300 bg-white/70 backdrop-blur p-6 sm:p-8 transition-all duration-300 hover:-translate-y-0.5 hover:border-teal-300 hover:shadow-lg">
+        <div class="h-11 w-11 sm:h-12 sm:w-12 rounded-full bg-teal-50 border border-teal-200 flex items-center justify-center mb-4 sm:mb-6">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-teal-700" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="14" x="2" y="5" rx="2"/><line x1="2" x2="22" y1="10" y2="10"/></svg>
+        </div>
+        <p class="text-[0.65rem] sm:text-[0.7rem] uppercase tracking-[0.22em] text-slate-500 mb-2 sm:mb-3" data-i18n="info.card2_label">Facturation</p>
+        <p class="font-serif font-light text-xl sm:text-2xl text-slate-900 leading-tight" data-i18n="info.card2_value">Paiement direct</p>
+        <p class="text-sm text-slate-500 mt-1" data-i18n="info.card2_sub">Tiers payant immédiat</p>
+      </div>
+
+      <div class="relative rounded-2xl border border-stone-300 bg-white/70 backdrop-blur p-6 sm:p-8 transition-all duration-300 hover:-translate-y-0.5 hover:border-teal-300 hover:shadow-lg">
+        <div class="h-11 w-11 sm:h-12 sm:w-12 rounded-full bg-teal-50 border border-teal-200 flex items-center justify-center mb-4 sm:mb-6">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-teal-700" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <p class="text-[0.65rem] sm:text-[0.7rem] uppercase tracking-[0.22em] text-slate-500 mb-2 sm:mb-3" data-i18n="info.card3_label">Adresse</p>
+        <p class="font-serif font-light text-xl sm:text-2xl text-slate-900 leading-tight">169, Route De Burange</p>
+        <p class="text-sm text-slate-500 mt-1">3429 Dudelange</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE -->
+  <section class="px-5 sm:px-6 lg:px-10 pb-16 sm:pb-20 lg:pb-28">
+    <div class="max-w-4xl mx-auto rounded-3xl border border-teal-100 bg-gradient-to-br from-teal-50 via-[#f2ede4] to-amber-50 px-6 sm:px-14 py-10 sm:py-14 lg:py-16 text-center shadow-sm">
+      <p class="font-serif italic font-light text-xl sm:text-3xl lg:text-4xl leading-snug text-slate-800" data-i18n="quote.text">
+        « Un accompagnement bienveillant et personnalisé, dans le respect de chacun. »
+      </p>
+      <div class="mt-6 sm:mt-8 flex items-center justify-center gap-3 sm:gap-4">
+        <span class="h-px w-8 sm:w-10 bg-teal-600/60"></span>
+        <span class="text-[0.65rem] sm:text-[0.7rem] uppercase tracking-[0.26em] sm:tracking-[0.3em] text-teal-700 font-medium">Dr. Myriam Kann</span>
+        <span class="h-px w-8 sm:w-10 bg-teal-600/60"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATION -->
+  <section class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-10 pb-20 sm:pb-24 lg:pb-32">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 sm:gap-12 lg:gap-16 items-start">
+      <div class="lg:col-span-5 lg:pt-6">
+        <p class="text-[0.65rem] sm:text-[0.7rem] uppercase tracking-[0.24em] sm:tracking-[0.28em] text-teal-700 font-medium mb-3 sm:mb-4" data-i18n="location.eyebrow">Nous trouver</p>
+        <h2 class="font-serif font-light text-3xl sm:text-4xl lg:text-5xl text-slate-900 leading-tight">
+          <span data-i18n="location.title_1">Cabinet à</span> <span class="italic text-teal-800">Dudelange</span>
+        </h2>
+        <div class="mt-6 sm:mt-8 space-y-1">
+          <p class="font-serif text-xl sm:text-2xl text-slate-900">169, Route De Burange</p>
+          <p class="font-serif text-base sm:text-lg text-slate-700">3429 Dudelange</p>
+          <p class="text-slate-500">Luxembourg</p>
+        </div>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=169%2C%20Route%20De%20Burange%2C%203429%20Dudelange"
+           target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center gap-2 mt-5 sm:mt-6 text-teal-700 hover:text-teal-800 font-medium group text-sm sm:text-base">
+          <span data-i18n="location.directions">Obtenir l'itinéraire</span>
+          <span class="transition-transform group-hover:translate-x-1">→</span>
+        </a>
+
+      </div>
+      <div class="lg:col-span-7">
+        <div class="rounded-2xl sm:rounded-3xl overflow-hidden border border-stone-300 shadow-sm bg-white">
+          <iframe src="https://www.google.com/maps?q=169%2C%20Route%20De%20Burange%2C%203429%20Dudelange&output=embed"
+            width="100%" height="380" class="sm:h-[480px]" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" title="Carte du cabinet Dr. Myriam Kann"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-stone-300 bg-[#f2ede4]/80">
+    <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-10 py-6 sm:py-8 flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4 text-center sm:text-left">
+      <div class="flex items-center gap-2 sm:gap-3 flex-wrap justify-center">
+        <span class="font-serif text-slate-900 text-base sm:text-lg">Dr. Myriam <span class="italic text-teal-800">Kann</span></span>
+        <span class="hidden sm:inline text-stone-400">·</span>
+        <span class="hidden sm:inline text-sm text-slate-500">169, Route De Burange · Dudelange</span>
+      </div>
+      <p class="text-[0.7rem] sm:text-xs text-slate-500">
+        © <span id="year"></span> Dr. Myriam Kann. <span data-i18n="footer.rights">Tous droits réservés.</span>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+  (function () {
+    'use strict';
+
+    var STORAGE_KEY  = 'mk-lang';
+    var DEFAULT_LANG = 'fr';
+    var SUPPORTED    = ['fr', 'de', 'en'];
+
+    var I18N = {
+      fr: {
+        html_lang: 'fr',
+        meta_title: 'Dr. Myriam Kann — Psychiatre · Psychothérapeute · Dudelange',
+        meta_description: 'Cabinet de Dr. Myriam Kann, Psychiatre et Psychothérapeute à Dudelange, Luxembourg.',
+        'header.label':    'Cabinet Médical',
+        'header.cta':      'Prendre RDV',
+        'hero.eyebrow':    'Psychiatre · Psychothérapeute',
+        'hero.firstname':  'Dr. Myriam',
+        'hero.subtitle':   'Un accompagnement psychiatrique et psychothérapeutique attentif, dans un cadre discret et bienveillant à Dudelange. Consultations en français, allemand et anglais.',
+        'hero.cta':        'Prendre rendez-vous sur Doctena',
+        'hero.image_quote':'Écouter, comprendre, accompagner.',
+        'about.eyebrow':   'La Praticienne',
+        'about.title_1':   'À propos du',
+        'about.title_2':   'Dr. Kann',
+        'about.p1':        'Le Dr. Myriam Kann est psychiatre et psychothérapeute, exerçant en cabinet privé à Dudelange, au Luxembourg. Son approche s\u2019inscrit dans une écoute patiente et un respect profond du parcours de chacun.',
+        'about.p2':        'Les consultations se déroulent dans un cadre discret et chaleureux, en français, allemand ou anglais, afin que chaque personne puisse s\u2019exprimer dans la langue qui lui est la plus naturelle.',
+        'info.eyebrow':    'Le Cabinet',
+        'info.title_1':    'Informations',
+        'info.title_2':    'pratiques',
+        'info.card1_label':'Langues parlées',
+        'info.card1_value':'Français · Deutsch',
+        'info.card2_label':'Facturation',
+        'info.card2_value':'Paiement direct',
+        'info.card2_sub':  'Tiers payant immédiat',
+        'info.card3_label':'Adresse',
+        'quote.text':      '« Un accompagnement bienveillant et personnalisé, dans le respect de chacun. »',
+        'location.eyebrow':      'Nous trouver',
+        'location.title_1':      'Cabinet à',
+        'location.directions':   'Obtenir l\u2019itinéraire',
+        'footer.rights':   'Tous droits réservés.',
+      },
+      de: {
+        html_lang: 'de',
+        meta_title: 'Dr. Myriam Kann — Psychiaterin · Psychotherapeutin · Dudelange',
+        meta_description: 'Praxis von Dr. Myriam Kann, Psychiaterin und Psychotherapeutin in Dudelange, Luxemburg.',
+        'header.label':    'Arztpraxis',
+        'header.cta':      'Termin buchen',
+        'hero.eyebrow':    'Psychiaterin · Psychotherapeutin',
+        'hero.firstname':  'Dr. Myriam',
+        'hero.subtitle':   'Eine aufmerksame psychiatrische und psychotherapeutische Begleitung in einem diskreten und einfühlsamen Rahmen in Dudelange. Konsultationen auf Französisch, Deutsch und Englisch.',
+        'hero.cta':        'Termin über Doctena buchen',
+        'hero.image_quote':'Zuhören, verstehen, begleiten.',
+        'about.eyebrow':   'Die Ärztin',
+        'about.title_1':   'Über',
+        'about.title_2':   'Dr. Kann',
+        'about.p1':        'Dr. Myriam Kann ist Psychiaterin und Psychotherapeutin mit eigener Praxis in Dudelange, Luxemburg. Ihre Arbeit gründet auf aufmerksamem Zuhören und tiefem Respekt für den individuellen Weg eines jeden Patienten.',
+        'about.p2':        'Die Konsultationen finden in einem diskreten und freundlichen Rahmen statt — auf Französisch, Deutsch oder Englisch, damit sich jede Person in der Sprache ausdrücken kann, die ihr am natürlichsten ist.',
+        'info.eyebrow':    'Die Praxis',
+        'info.title_1':    'Praktische',
+        'info.title_2':    'Informationen',
+        'info.card1_label':'Gesprochene Sprachen',
+        'info.card1_value':'Français · Deutsch',
+        'info.card2_label':'Abrechnung',
+        'info.card2_value':'Direktzahlung',
+        'info.card2_sub':  'Sofortige Kostenübernahme',
+        'info.card3_label':'Adresse',
+        'quote.text':      '„Eine einfühlsame und individuelle Begleitung, mit Respekt für jeden Einzelnen."',
+        'location.eyebrow':      'So finden Sie uns',
+        'location.title_1':      'Praxis in',
+        'location.directions':   'Wegbeschreibung',
+        'footer.rights':   'Alle Rechte vorbehalten.',
+      },
+      en: {
+        html_lang: 'en',
+        meta_title: 'Dr. Myriam Kann — Psychiatrist · Psychotherapist · Dudelange',
+        meta_description: 'Practice of Dr. Myriam Kann, Psychiatrist and Psychotherapist in Dudelange, Luxembourg.',
+        'header.label':    'Medical Practice',
+        'header.cta':      'Book Now',
+        'hero.eyebrow':    'Psychiatrist · Psychotherapist',
+        'hero.firstname':  'Dr. Myriam',
+        'hero.subtitle':   'Attentive psychiatric and psychotherapeutic care, in a discreet and compassionate setting in Dudelange. Consultations in French, German, and English.',
+        'hero.cta':        'Schedule an Appointment via Doctena',
+        'hero.image_quote':'Listen, understand, accompany.',
+        'about.eyebrow':   'The Practitioner',
+        'about.title_1':   'About',
+        'about.title_2':   'Dr. Kann',
+        'about.p1':        'Dr. Myriam Kann is a psychiatrist and psychotherapist in private practice in Dudelange, Luxembourg. Her approach is rooted in patient listening and deep respect for each person\u2019s individual journey.',
+        'about.p2':        'Consultations take place in a discreet, welcoming setting — in French, German, or English — so that each person can speak in the language that feels most natural to them.',
+        'info.eyebrow':    'The Practice',
+        'info.title_1':    'Practical',
+        'info.title_2':    'information',
+        'info.card1_label':'Languages spoken',
+        'info.card1_value':'Français · Deutsch',
+        'info.card2_label':'Billing',
+        'info.card2_value':'Direct payment',
+        'info.card2_sub':  'Immediate third-party billing',
+        'info.card3_label':'Address',
+        'quote.text':      '"Compassionate, personalized care — with respect for every individual."',
+        'location.eyebrow':      'Find us',
+        'location.title_1':      'Practice in',
+        'location.directions':   'Get directions',
+        'footer.rights':   'All rights reserved.',
+      },
+    };
+
+    /* Year */
+    var yearEl = document.getElementById('year');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+    /* Detect language */
+    function detectLang() {
+      try {
+        var saved = localStorage.getItem(STORAGE_KEY);
+        if (saved && SUPPORTED.indexOf(saved) !== -1) return saved;
+      } catch (e) {}
+      var nav = (navigator.language || '').toLowerCase();
+      if (nav.indexOf('de') === 0) return 'de';
+      if (nav.indexOf('en') === 0) return 'en';
+      return DEFAULT_LANG;
+    }
+
+    /* Apply language — only touches leaf text nodes, never child elements */
+    function applyLang(lang) {
+      var dict = I18N[lang];
+      if (!dict) return;
+
+      document.documentElement.lang = dict.html_lang || lang;
+      document.title = dict.meta_title || document.title;
+      var md = document.querySelector('meta[name="description"]');
+      if (md && dict.meta_description) md.content = dict.meta_description;
+
+      document.querySelectorAll('[data-i18n]').forEach(function (el) {
+        var val = dict[el.getAttribute('data-i18n')];
+        if (val == null) return;
+        /* Only update pure text containers — skip any element that has
+           child elements (SVGs, spans, etc.) at this level */
+        if (el.children.length === 0) {
+          el.textContent = val;
+        }
+      });
+
+      var lc = document.getElementById('langCurrent');
+      if (lc) lc.textContent = lang.toUpperCase();
+
+      document.querySelectorAll('.lang-option').forEach(function (btn) {
+        var chk = btn.querySelector('.lang-check');
+        if (chk) chk.classList.toggle('hidden', btn.getAttribute('data-lang') !== lang);
+      });
+
+      try { localStorage.setItem(STORAGE_KEY, lang); } catch (e) {}
+    }
+
+    /* Menu toggle */
+    var toggle = document.getElementById('langToggle');
+    var menu   = document.getElementById('langMenu');
+
+    function closeMenu() { menu.classList.add('hidden'); toggle.setAttribute('aria-expanded', 'false'); }
+    function openMenu()  { menu.classList.remove('hidden'); toggle.setAttribute('aria-expanded', 'true'); }
+
+    toggle.addEventListener('click', function (e) {
+      e.stopPropagation();
+      menu.classList.contains('hidden') ? openMenu() : closeMenu();
+    });
+    document.addEventListener('click', function (e) {
+      if (!menu.contains(e.target) && e.target !== toggle) closeMenu();
+    });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeMenu(); });
+
+    document.querySelectorAll('.lang-option').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        applyLang(btn.getAttribute('data-lang'));
+        closeMenu();
+      });
+    });
+
+    applyLang(detectLang());
+
+  }());
+  </script>
+
+</body>
+</html>
